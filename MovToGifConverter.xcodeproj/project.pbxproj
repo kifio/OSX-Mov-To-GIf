@@ -82,6 +82,8 @@
 			dependencies = (
 			);
 			name = MovToGifConverter;
+			packageProductDependencies = (
+			);
 			productName = MovToGifConverter;
 			productReference = D1EEBB2F24368A4B00C24585 /* MovToGifConverter.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +112,8 @@
 				Base,
 			);
 			mainGroup = D1EEBB2624368A4B00C24585;
+			packageReferences = (
+			);
 			productRefGroup = D1EEBB3024368A4B00C24585 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
