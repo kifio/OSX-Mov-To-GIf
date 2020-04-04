@@ -36,9 +36,10 @@ extension ViewController : DraggingItemsHandler {
         progressIndicator.isHidden = false
         DispatchQueue.global(qos: .utility).async {
             let filename = self.formatter.string(from: Date())
+            let home = FileManager.default.homeDirectoryForCurrentUser.path
             let status = self.runCommand(
                 cmd: "/usr/local/bin/ffmpeg",
-                args: "-i", url, "-pix_fmt", "rgb24", "-filter_complex", "scale=480:-1", "/Users/ivan.murashov/Desktop/\(filename).gif"
+                args: "-i", url, "-pix_fmt", "rgb24", "-filter_complex", "scale=480:-1", "\(home)/Desktop/\(filename).gif"
             )
 
             print("Programm exit with status \(status)")
